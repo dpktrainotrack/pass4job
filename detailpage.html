@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass4Job | Discounted IT Exam Vouchers</title>
+    <meta name="description"
+        content="Pass4Job provides affordable and official IT certification vouchers for AWS, Azure, Cisco, CompTIA, and more. Start your certification journey today.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shield-check me-2" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="vouchers.html">Vouchers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="contact.html" class="btn btn-primary d-none d-lg-block">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- Custom CSS for Course Details Page -->
+        <style>
+            .course-hero {
+                background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+                color: var(--white);
+                padding: 80px 0 60px;
+                position: relative;
+            }
+
+            .course-hero::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                background: var(--light-bg);
+                clip-path: polygon(0 100%, 100% 100%, 100% 0);
+            }
+
+            .course-badges .badge {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .course-sidebar {
+                position: sticky;
+                top: 100px;
+                z-index: 10;
+            }
+
+            .sidebar-card {
+                background: var(--white);
+                border-radius: 12px;
+                box-shadow: var(--shadow-md);
+                padding: 30px;
+                margin-bottom: 30px;
+                border-top: 4px solid var(--accent-color);
+            }
+
+            .course-price {
+                font-size: 2.5rem;
+                font-weight: 800;
+                color: var(--primary-blue);
+            }
+
+            .original-price {
+                text-decoration: line-through;
+                color: var(--gray-text);
+                font-size: 1.2rem;
+                margin-left: 10px;
+            }
+
+            .course-features-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .course-features-list li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                color: var(--dark-text);
+                font-weight: 500;
+            }
+
+            .course-features-list li i {
+                width: 30px;
+                color: var(--accent-color);
+                font-size: 1.2rem;
+            }
+
+            .curriculum-accordion .accordion-item {
+                border: none;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                box-shadow: var(--shadow-sm);
+                overflow: hidden;
+            }
+
+            .curriculum-accordion .accordion-button {
+                font-weight: 600;
+                color: var(--secondary-blue);
+                padding: 20px;
+                background-color: var(--white);
+            }
+
+            .curriculum-accordion .accordion-button:not(.collapsed) {
+                background-color: rgba(10, 88, 202, 0.05);
+                color: var(--primary-blue);
+            }
+
+            .instructor-card {
+                background: var(--white);
+                border-radius: 12px;
+                box-shadow: var(--shadow-sm);
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .instructor-img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid var(--accent-color);
+            }
+
+            @media (max-width: 991.98px) {
+                .course-sidebar {
+                    position: static;
+                    margin-top: 40px;
+                }
+
+                .instructor-card {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+
+            .section-heading {
+                font-size: 1.8rem;
+                color: var(--secondary-blue);
+                margin-bottom: 30px;
+                position: relative;
+                padding-bottom: 10px;
+            }
+
+            .section-heading::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 50px;
+                height: 3px;
+                background-color: var(--accent-color);
+            }
+        </style>
+
+        <!-- Hero Banner Section -->
+        <section class="course-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="course-badges d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge text-white"><i class="fas fa-star text-warning me-1"></i> 4.8 (2.5k
+                                Reviews)</span>
+                            <span class="badge text-white"><i class="fas fa-signal me-1"></i> Intermediate</span>
+                            <span class="badge text-white"><i class="fas fa-language me-1"></i> English</span>
+                        </div>
+                        <h1 class="display-4 fw-bold mb-3">AWS Certified Solutions Architect – Associate</h1>
+                        <p class="lead mb-4 opacity-75">Master cloud architecture and prepare for the official AWS
+                            certification exam with hands-on labs and expert guidance.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#enroll" class="btn theme-primary btn-lg">Enroll Now <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Left Column: Details -->
+                    <div class="col-lg-8">
+
+                        <!-- Course Overview -->
+                        <div class="mb-5">
+                            <h3 class="section-heading">Course Overview</h3>
+                            <p class="text-muted lh-lg">This course is designed to help you pass the AWS Certified
+                                Solutions Architect (CSA) - Associate Exam. Even if you have never logged in to the AWS
+                                platform before, by the end of our AWS training you will be able to take the CSA exam.
+                                No programming knowledge needed and no prior AWS experience required.</p>
+                            <p class="text-muted lh-lg mb-4">With this certification, you will validate your ability to
+                                design and deploy well-architected systems on AWS that are scalable, resilient, and
+                                highly available.</p>
+
+                            <div class="row g-4 mt-2">
+                                <div class="col-md-6">
+                                    <div class="feature-card h-100 p-4">
+                                        <div class="icon-box mb-3"><i class="fas fa-laptop-code"></i></div>
+                                        <h5>Hands-on Labs</h5>
+                                        <p class="small text-muted mb-0">Gain real-world experience through guided
+                                            practical exercises.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-card h-100 p-4">
+                                        <div class="icon-box mb-3"><i class="fas fa-infinity"></i></div>
+                                        <h5>Lifetime Access</h5>
+                                        <p class="small text-muted mb-0">Learn at your own pace with unlimited access to
+                                            course materials.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Curriculum -->
+                        <div class="mb-5">
+                            <h3 class="section-heading">Course Curriculum</h3>
+                            <div class="accordion curriculum-accordion" id="curriculumAccordion">
+                                <!-- Module 1 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Module 1: Introduction to Cloud Computing & AWS
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#curriculumAccordion">
+                                        <div class="accordion-body text-muted">
+                                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> What is Cloud
+                                                    Computing?</li>
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> AWS Global
+                                                    Infrastructure</li>
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> IAM (Identity
+                                                    and Access Management)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Module 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Module 2: Amazon EC2 & EBS
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#curriculumAccordion">
+                                        <div class="accordion-body text-muted">
+                                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> EC2 Instance
+                                                    Types and Pricing</li>
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> Elastic Block
+                                                    Store (EBS) Volumes</li>
+                                                <li><i class="fas fa-laptop text-primary me-2"></i> Hands-on: Launching
+                                                    your first EC2 Instance</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Module 3 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Module 3: Amazon S3 & Storage
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#curriculumAccordion">
+                                        <div class="accordion-body text-muted">
+                                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> S3 Basics and
+                                                    Storage Classes</li>
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> S3 Security and
+                                                    Versioning</li>
+                                                <li><i class="fas fa-laptop text-primary me-2"></i> Hands-on: Hosting a
+                                                    static website on S3</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Module 4 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Module 4: Virtual Private Cloud (VPC)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#curriculumAccordion">
+                                        <div class="accordion-body text-muted">
+                                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> VPC
+                                                    Fundamentals and Subnets</li>
+                                                <li><i class="far fa-play-circle text-primary me-2"></i> Route Tables,
+                                                    Internet Gateways, NAT Gateways</li>
+                                                <li><i class="fas fa-laptop text-primary me-2"></i> Hands-on: Building a
+                                                    custom VPC</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Instructor Section -->
+                        <div class="mb-5">
+                            <h3 class="section-heading">Meet Your Instructor</h3>
+                            <div class="instructor-card">
+                                <img src="https://i.pravatar.cc/150?u=instructor" alt="Instructor"
+                                    class="instructor-img">
+                                <div>
+                                    <h4 class="mb-1">David Smith</h4>
+                                    <p class="text-primary fw-semibold mb-2">Senior Cloud Architect</p>
+                                    <p class="text-muted small mb-0">David has over 15 years of experience in the IT
+                                        industry and has spent the last 8 years designing enterprise-scale solutions on
+                                        AWS. He holds all 12 AWS certifications and is passionate about helping others
+                                        succeed in their cloud journeys.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Student Reviews Section -->
+                        <div class="mb-5">
+                            <h3 class="section-heading">Student Reviews</h3>
+                            <div class="owl-carousel owl-theme" id="studentReviews">
+                                <!-- Review 1 -->
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"This course was exactly what I needed to pass the
+                                            AWS exam. The hands-on labs were incredibly helpful and the explanations
+                                            were clear and concise."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user1" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Sarah Jenkins</div>
+                                                <div class="user-role">Cloud Engineer</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review 2 -->
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"Excellent material! I went from zero AWS knowledge
+                                            to passing the Associate exam in just 2 months. Highly recommend this to
+                                            anyone starting out."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user2" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Michael Chang</div>
+                                                <div class="user-role">System Administrator</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review 3 -->
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p class="testimonial-text">"The practice exams provided at the end of the
+                                            course were very similar to the real exam. I felt completely prepared on
+                                            exam day."</p>
+                                        <div class="user">
+                                            <img src="https://i.pravatar.cc/150?u=user3" alt="Student">
+                                            <div class="user-info">
+                                                <div class="user-name">Emily Davis</div>
+                                                <div class="user-role">IT Manager</div>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="mb-5">
+                            <h3 class="section-heading">Frequently Asked Questions</h3>
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading1">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
+                                            Do I need programming experience?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse1" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            No, programming experience is not required. The course focuses on
+                                            architectural concepts and services provided by AWS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading2">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse2">
+                                            Is the exam voucher included in the course fee?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse2" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            Yes! By enrolling through Pass4Job, you receive a heavily discounted
+                                            official AWS exam voucher included as part of your training package.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3 border-0 shadow-sm rounded">
+                                    <h2 class="accordion-header" id="faqHeading3">
+                                        <button class="accordion-button collapsed fw-semibold rounded" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faqCollapse3">
+                                            How long do I have access to the materials?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapse3" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-muted">
+                                            You get lifetime access to all course materials, including future updates to
+                                            the curriculum as AWS services evolve.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column: Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="course-sidebar">
+
+                            <!-- Course Info Card -->
+                            <div class="sidebar-card" id="enroll">
+                                <div class="mb-4">
+                                    <span class="course-price">$149</span>
+                                    <span class="original-price">$299</span>
+                                    <div class="badge bg-danger mt-2 d-block w-50">50% OFF</div>
+                                </div>
+
+                                <a href="contact.html" class="btn theme-primary w-100 btn-lg mb-3">Enroll Now</a>
+                                <p class="text-center small text-muted mb-4"><i class="fas fa-shield-alt me-1"></i>
+                                    30-Day Money-Back Guarantee</p>
+
+                                <h6 class="fw-bold mb-3 pb-2 border-bottom">Course Information:</h6>
+                                <ul class="course-features-list mb-4">
+                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-clock"></i> Duration</div>
+                                        <div class="small text-muted fw-semibold">40 Hours</div>
+                                    </li>
+                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-barcode"></i> Exam Code</div>
+                                        <div class="small text-muted fw-semibold">ABC1234</div>
+                                    </li>
+                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-sync-alt"></i> Retake Policy</div>
+                                        <div class="small text-muted fw-semibold">2 Free Retakes</div>
+                                    </li>
+                                    <li class="justify-content-between pb-2 mb-3 border-bottom">
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-globe"></i> Language</div>
+                                        <div class="small text-muted fw-semibold">English</div>
+                                    </li>
+                                    <li class="justify-content-between pb-2 mb-2">
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-infinity"></i> Access</div>
+                                        <div class="small text-muted fw-semibold">Lifetime</div>
+                                    </li>
+                                </ul>
+
+                                <!-- Why Choose Us Card -->
+
+
+                            </div>
+                            <div class="sidebar-card bg-light border-0 border-top border-4"
+                                style="border-color: var(--secondary-blue) !important;">
+                                <h5 class="fw-bold mb-4">Why Choose Pass4Job?</h5>
+                                <ul class="course-features-list">
+                                    <li class="align-items-start">
+                                        <i class="fas fa-check-circle mt-1"></i>
+                                        <div>
+                                            <strong class="d-block">Official Partner</strong>
+                                            <span class="small text-muted">Authorized training and genuine
+                                                vouchers.</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-items-start">
+                                        <i class="fas fa-headset mt-1"></i>
+                                        <div>
+                                            <strong class="d-block">24/7 Support</strong>
+                                            <span class="small text-muted">Expert assistance whenever you need
+                                                it.</span>
+                                        </div>
+                                    </li>
+                                    <li class="align-items-start">
+                                        <i class="fas fa-sync-alt mt-1"></i>
+                                        <div>
+                                            <strong class="d-block">Updated Content</strong>
+                                            <span class="small text-muted">Curriculum aligned with the latest
+                                                exams.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <!-- Custom Script for Owl Carousel Initialization -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Initialize owl carousel when jQuery is ready
+                var checkJquery = setInterval(function () {
+                    if (window.jQuery && window.jQuery.fn.owlCarousel) {
+                        clearInterval(checkJquery);
+                        $('#studentReviews').owlCarousel({
+                            loop: true,
+                            margin: 20,
+                            nav: false,
+                            dots: true,
+                            autoplay: true,
+                            autoplayTimeout: 5000,
+                            responsive: {
+                                0: { items: 1 },
+                                768: { items: 2 },
+                                1000: { items: 2 }
+                            }
+                        });
+                    }
+                }, 100);
+            });
+        </script>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h3 class="mb-4" style="font-family: 'Montserrat'; font-weight:800;">Pass4<span
+                            style="color:var(--accent-color);">Job</span></h3>
+                    <p class="small opacity-75 pe-lg-4">Your trusted partner for official and discounted IT
+                        certification vouchers. Start saving on your exams today.</p>
+                    <div class="footer-socials mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vouchers.html">Vouchers</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Certifications</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
+                        <li><a href="vouchers.html">AWS Vouchers</a></li>
+                        <li><a href="vouchers.html">Microsoft Azure Vouchers</a></li>
+                        <li><a href="vouchers.html">Cisco Vouchers</a></li>
+                        <li><a href="vouchers.html">CompTIA Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small opacity-75">
+                        <li><i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Tech Avenue, Silicon Valley</li>
+                        <li><i class="fas fa-envelope me-2 text-primary"></i> support@pass4job.com</li>
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small opacity-75">
+                    &copy; 2024 Pass4Job. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end small opacity-75 mt-3 mt-md-0">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--call floating button-->
+    <a href="tel:+1234567890" class="call-float" target="_blank" rel="noopener noreferrer"
+        style="text-decoration: none;">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        style="text-decoration: none;">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
