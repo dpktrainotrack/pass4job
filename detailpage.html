@@ -21,7 +21,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -31,34 +31,235 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
+            <!-- <a class="navbar-brand" href="index.html">
+                                    <img src="assets/images/logo.png" alt="Pass4Job Logo" style="height: 36px;">
+                                </a> -->
             <a class="navbar-brand" href="index.html">
                 <i class="fas fa-shield-check me-2" style="color: var(--accent-color);"></i>Pass4<span>Job</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <!-- Megamenu Toggler -->
+            <div class="dropdown me-auto ms-3 d-none d-lg-block position-static">
+                <button class="btn theme-primary dropdown-toggle courses-btn d-flex align-items-center gap-2 px-4 py-2"
+                    type="button" id="coursesMegaMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-auto-close="outside">
+                    Training
+                </button>
+                <!-- Megamenu Dropdown -->
+                <div class="dropdown-menu w-100 mega-menu-dropdown  border-0 mt-3 p-3 "
+                    aria-labelledby="coursesMegaMenuButton">
+                    <div class="container p-0 rounded">
+                        <div class="row g-0">
+                            <!-- Left Sidebar Categories -->
+                            <div class="col-md-3 bg-light border-end">
+                                <div class="nav flex-column nav-pills mega-menu-tabs p-3 gap-2 brand-listing-tabs"
+                                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active d-flex align-items-center bg-white border"
+                                        id="v-pills-data-analytics-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-analytics" type="button" role="tab"
+                                        aria-controls="v-pills-data-analytics" aria-selected="true">
+                                        <img src="assets/images/brands/aws.webp" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-data-science-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-data-science" type="button" role="tab"
+                                        aria-controls="v-pills-data-science" aria-selected="false">
+                                        <img src="assets/images/brands/isaca.webp" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-development-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-development" type="button" role="tab"
+                                        aria-controls="v-pills-development" aria-selected="false">
+                                        <img src="assets/images/brands/comptia.webp" alt="" height="50">
+
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-cyber-security-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-cyber-security" type="button" role="tab"
+                                        aria-controls="v-pills-cyber-security" aria-selected="false">
+                                        <img src="assets/images/brands/pmi.webp" alt="" height="50">
+
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-cloud-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cloud"
+                                        type="button" role="tab" aria-controls="v-pills-cloud" aria-selected="false">
+                                        <img src="assets/images/brands/paloalto.webp" alt="" height="50">
+
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border"
+                                        id="v-pills-design-tab" data-bs-toggle="pill" data-bs-target="#v-pills-design"
+                                        type="button" role="tab" aria-controls="v-pills-design" aria-selected="false">
+                                        <img src="assets/images/brands/google.png" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                    <button class="nav-link d-flex align-items-center bg-white border" id="tab7"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-tab7" type="button" role="tab"
+                                        aria-controls="v-pills-tab7" aria-selected="false">
+                                        <img src="assets/images/brands/vmware.png" alt="" height="50">
+                                        <i class="fas fa-chevron-right ms-auto small"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Right Content Area -->
+                            <div class="col-md-9 p-4 bg-white">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <!-- Data Analytics Content -->
+                                    <div class="tab-pane fade show active" id="v-pills-data-analytics" role="tabpanel"
+                                        aria-labelledby="v-pills-data-analytics-tab">
+                                        <!-- <h4 class="fw-bold mb-4">Data Analytics</h4> -->
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <a href="detailpage.html" class="text-decoration-none text-dark"
+                                                    style="cursor: pointer;">
+                                                    <div
+                                                        class="mega-course-card p-3 border rounded h-100 d-flex align-items-center gap-3 transition-all">
+                                                        <div class="icon-wrapper rounded text-white p-3 fs-3 bg-light ">
+                                                            <img src="assets/images/brands/aws.webp" alt="" height="40">
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <h6 class="fw-bold mb-2">AWS Certified Solutions
+                                                                Architect Associate</h6>
+                                                            <div
+                                                                class="d-flex justify-content-between text-muted small">
+                                                                <span>8 Months</span>
+                                                                <span>Online</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Other Content Panels Placeholder -->
+                                    <div class="tab-pane fade" id="v-pills-data-science" role="tabpanel"
+                                        aria-labelledby="v-pills-data-science-tab">
+                                        <h4 class="fw-bold mb-4">isaca</h4>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-development" role="tabpanel"
+                                        aria-labelledby="v-pills-development-tab">
+                                        <h4 class="fw-bold mb-4">compTia</h4>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-cyber-security" role="tabpanel"
+                                        aria-labelledby="v-pills-cyber-security-tab">
+                                        <h4 class="fw-bold mb-4">PMI</h4>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-cloud" role="tabpanel"
+                                        aria-labelledby="v-pills-cloud-tab">
+                                        <h4 class="fw-bold mb-4">DevOps and Cloud</h4>
+                                        <p class="text-muted">Courses coming soon.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-design" role="tabpanel"
+                                        aria-labelledby="v-pills-design-tab">
+                                        <h4 class="fw-bold mb-4">Design</h4>
+                                        <p class="text-muted">Courses coming soon.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tab7" role="tabpanel" aria-labelledby="tab7">
+                                        <h4 class="fw-bold mb-4">vmware</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                                            <a class="nav-link" href="category.html">Training</a>
+                                        </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="vouchers.html">Vouchers</a>
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
+
                 </ul>
-                <div class="d-flex">
-                    <a href="contact.html" class="btn btn-primary d-none d-lg-block">Enquire Now</a>
+                <div class="d-flex gap-2 hero-cta-btn">
+                    <a href="tel:+917428563177" class="btn btn-outline-light ">+91 74285 63177</a>
                 </div>
+
             </div>
+            <!-- ===CTA-Btuuon -->
         </div>
     </nav>
 
@@ -66,158 +267,19 @@
     <main>
         <!-- Custom CSS for Course Details Page -->
         <style>
-            .course-hero {
-                background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
-                color: var(--white);
-                padding: 80px 0 60px;
-                position: relative;
-            }
 
-            .course-hero::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 50px;
-                background: var(--light-bg);
-                clip-path: polygon(0 100%, 100% 100%, 100% 0);
-            }
-
-            .course-badges .badge {
-                font-size: 0.9rem;
-                padding: 8px 12px;
-                background-color: rgba(255, 255, 255, 0.1);
-                border: 1px solid rgba(255, 255, 255, 0.2);
-            }
-
-            .course-sidebar {
-                position: sticky;
-                top: 100px;
-                z-index: 10;
-            }
-
-            .sidebar-card {
-                background: var(--white);
-                border-radius: 12px;
-                box-shadow: var(--shadow-md);
-                padding: 30px;
-                margin-bottom: 30px;
-                border-top: 4px solid var(--accent-color);
-            }
-
-            .course-price {
-                font-size: 2.5rem;
-                font-weight: 800;
-                color: var(--primary-blue);
-            }
-
-            .original-price {
-                text-decoration: line-through;
-                color: var(--gray-text);
-                font-size: 1.2rem;
-                margin-left: 10px;
-            }
-
-            .course-features-list {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .course-features-list li {
-                display: flex;
-                align-items: center;
-                margin-bottom: 15px;
-                color: var(--dark-text);
-                font-weight: 500;
-            }
-
-            .course-features-list li i {
-                width: 30px;
-                color: var(--accent-color);
-                font-size: 1.2rem;
-            }
-
-            .curriculum-accordion .accordion-item {
-                border: none;
-                margin-bottom: 15px;
-                border-radius: 8px;
-                box-shadow: var(--shadow-sm);
-                overflow: hidden;
-            }
-
-            .curriculum-accordion .accordion-button {
-                font-weight: 600;
-                color: var(--secondary-blue);
-                padding: 20px;
-                background-color: var(--white);
-            }
-
-            .curriculum-accordion .accordion-button:not(.collapsed) {
-                background-color: rgba(10, 88, 202, 0.05);
-                color: var(--primary-blue);
-            }
-
-            .instructor-card {
-                background: var(--white);
-                border-radius: 12px;
-                box-shadow: var(--shadow-sm);
-                padding: 30px;
-                display: flex;
-                align-items: center;
-                gap: 20px;
-            }
-
-            .instructor-img {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 3px solid var(--accent-color);
-            }
-
-            @media (max-width: 991.98px) {
-                .course-sidebar {
-                    position: static;
-                    margin-top: 40px;
-                }
-
-                .instructor-card {
-                    flex-direction: column;
-                    text-align: center;
-                }
-            }
-
-            .section-heading {
-                font-size: 1.8rem;
-                color: var(--secondary-blue);
-                margin-bottom: 30px;
-                position: relative;
-                padding-bottom: 10px;
-            }
-
-            .section-heading::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 50px;
-                height: 3px;
-                background-color: var(--accent-color);
-            }
         </style>
 
         <!-- Hero Banner Section -->
         <section class="course-hero">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
+                <div class="row align-items-center gy-5">
+                    <div class="col-xl-8 col-lg-6 col-12">
                         <div class="course-badges d-flex flex-wrap gap-2 mb-3">
                             <span class="badge text-white"><i class="fas fa-star text-warning me-1"></i> 4.8 (2.5k
                                 Reviews)</span>
-                            <span class="badge text-white"><i class="fas fa-signal me-1"></i> Intermediate</span>
-                            <span class="badge text-white"><i class="fas fa-language me-1"></i> English</span>
+
+
                         </div>
                         <h1 class="display-4 fw-bold mb-3">AWS Certified Solutions Architect – Associate</h1>
                         <p class="lead mb-4 opacity-75">Master cloud architecture and prepare for the official AWS
@@ -226,6 +288,114 @@
                             <a href="#enroll" class="btn theme-primary btn-lg">Enroll Now <i
                                     class="fas fa-arrow-right ms-2"></i></a>
 
+                        </div>
+                    </div>
+                    <!-- enquery form section -->
+                    <div class="col-xl-4 col-lg-6 col-12 pb-5">
+                        <div class="hero-enquiry-card">
+
+                            <!-- Card Header -->
+                            <div class="hero-enquiry-header">
+                                <div class="hero-enquiry-header-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h5 class="mb-0 fw-bold">Get Free Counselling</h5>
+                                    <p class="mb-0 small opacity-75">Talk to our experts today</p>
+                                </div>
+                                <div class="hef-live-dot">
+                                    <span class="hef-pulse-ring"></span>
+                                    <span class="hef-pulse-dot"></span>
+                                </div>
+                            </div>
+
+                            <!-- Form Body -->
+                            <div class="hero-enquiry-body">
+                                <form action="" id="heroEnquiryForm" novalidate>
+
+                                    <!-- Full Name -->
+                                    <div class="hef-field-group mb-3">
+                                        <div class="hef-input-wrap">
+                                            <span class="hef-input-icon"><i class="fas fa-user"></i></span>
+                                            <input type="text" id="hefName" class="hef-input" placeholder=" " required>
+                                            <label for="hefName" class="hef-label">Full Name</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="hef-field-group mb-3">
+                                        <div class="hef-input-wrap">
+                                            <span class="hef-input-icon"><i class="fas fa-envelope"></i></span>
+                                            <input type="email" id="hefEmail" class="hef-input" placeholder=" "
+                                                required>
+                                            <label for="hefEmail" class="hef-label">Email Address</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div class="hef-field-group mb-3">
+                                        <div class="hef-input-wrap hef-phone-wrap">
+                                            <span class="hef-input-icon"><i class="fas fa-phone-alt"></i></span>
+                                            <span class="hef-country-code">+91</span>
+                                            <input type="tel" id="hefPhone" class="hef-input hef-input-phone"
+                                                placeholder=" " required>
+                                            <label for="hefPhone" class="hef-label hef-label-phone">Phone Number</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Course Interest -->
+                                    <div class="hef-field-group mb-3">
+                                        <div class="hef-input-wrap hef-select-wrap">
+                                            <span class="hef-input-icon"><i class="fas fa-graduation-cap"></i></span>
+                                            <select id="hefCourse" class="hef-input hef-select" required>
+                                                <option value="" disabled selected hidden></option>
+                                                <option>AWS Solutions Architect</option>
+                                                <option>Microsoft Azure</option>
+                                                <option>Google Cloud (GCP)</option>
+                                                <option>Cisco CCNA / CCNP</option>
+                                                <option>CompTIA Security+</option>
+                                            </select>
+                                            <label for="hefCourse" class="hef-label">Course Interested In</label>
+                                            <span class="hef-select-arrow"><i class="fas fa-chevron-down"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div class="hef-field-group mb-4">
+                                        <div class="hef-input-wrap hef-textarea-wrap">
+                                            <span class="hef-input-icon hef-textarea-icon"><i
+                                                    class="fas fa-comment-dots"></i></span>
+                                            <textarea id="hefMessage" class="hef-input hef-textarea" rows="3"
+                                                placeholder=" "></textarea>
+                                            <label for="hefMessage" class="hef-label">Your Message (Optional)</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="hef-submit-btn">
+                                        <span class="hef-btn-text">
+                                            <i class="fas fa-paper-plane me-2"></i>Request a Callback
+                                        </span>
+                                        <span class="hef-btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                                    </button>
+                                </form>
+
+                                <!-- Trust Badges -->
+                                <div class="hef-trust-row">
+                                    <div class="hef-trust-item">
+                                        <i class="fas fa-lock"></i>
+                                        <span>100% Secure</span>
+                                    </div>
+                                    <div class="hef-trust-item">
+                                        <i class="fas fa-bolt"></i>
+                                        <span>Quick Response</span>
+                                    </div>
+                                    <div class="hef-trust-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>No Spam</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,31 +411,219 @@
                     <div class="col-lg-8">
 
                         <!-- Course Overview -->
-                        <div class="mb-5">
+                        <div class="mb-5 course-overview-section">
                             <h3 class="section-heading">Course Overview</h3>
-                            <p class="text-muted lh-lg">This course is designed to help you pass the AWS Certified
-                                Solutions Architect (CSA) - Associate Exam. Even if you have never logged in to the AWS
-                                platform before, by the end of our AWS training you will be able to take the CSA exam.
-                                No programming knowledge needed and no prior AWS experience required.</p>
-                            <p class="text-muted lh-lg mb-4">With this certification, you will validate your ability to
-                                design and deploy well-architected systems on AWS that are scalable, resilient, and
-                                highly available.</p>
+                            <p class="text-muted lh-lg mb-4">This course is designed to help you pass the <strong>AWS
+                                    Certified Solutions Architect – Associate</strong> exam. Even if you've never logged
+                                into AWS before, our structured training takes you from zero to certified. No
+                                programming knowledge or prior cloud experience required.</p>
 
-                            <div class="row g-4 mt-2">
+                            <!-- Quick Stats Strip -->
+                            <div class="co-stats-strip mb-4">
+                                <div class="co-stat-item">
+                                    <div class="co-stat-icon"><i class="fas fa-clock"></i></div>
+                                    <div class="co-stat-info">
+                                        <span class="co-stat-number">40+</span>
+                                        <span class="co-stat-label">Hours of Content</span>
+                                    </div>
+                                </div>
+                                <div class="co-stat-divider"></div>
+                                <div class="co-stat-item">
+                                    <div class="co-stat-icon"><i class="fas fa-layer-group"></i></div>
+                                    <div class="co-stat-info">
+                                        <span class="co-stat-number">12</span>
+                                        <span class="co-stat-label">Core Modules</span>
+                                    </div>
+                                </div>
+                                <div class="co-stat-divider"></div>
+                                <div class="co-stat-item">
+                                    <div class="co-stat-icon"><i class="fas fa-users"></i></div>
+                                    <div class="co-stat-info">
+                                        <span class="co-stat-number">8,200+</span>
+                                        <span class="co-stat-label">Students Enrolled</span>
+                                    </div>
+                                </div>
+                                <div class="co-stat-divider"></div>
+                                <div class="co-stat-item">
+                                    <div class="co-stat-icon"><i class="fas fa-star"></i></div>
+                                    <div class="co-stat-info">
+                                        <span class="co-stat-number">4.8</span>
+                                        <span class="co-stat-label">Avg. Rating</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Topics Covered -->
+                            <div class="co-topics-block mb-4">
+                                <h6 class="co-topics-title"><i class="fas fa-th-list me-2"></i>Topics Covered in This
+                                    Course</h6>
+                                <div class="co-topics-grid">
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-cloud"></i></span>
+                                        <span>Cloud Computing Fundamentals</span>
+                                    </div>
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-server"></i></span>
+                                        <span>EC2, ECS &amp; Lambda</span>
+                                    </div>
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-database"></i></span>
+                                        <span>S3, RDS &amp; DynamoDB</span>
+                                    </div>
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-network-wired"></i></span>
+                                        <span>VPC, Subnets &amp; Route Tables</span>
+                                    </div>
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-shield-alt"></i></span>
+                                        <span>IAM, Security Groups &amp; KMS</span>
+                                    </div>
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-chart-line"></i></span>
+                                        <span>CloudWatch, CloudTrail &amp; SNS</span>
+                                    </div>
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-sync-alt"></i></span>
+                                        <span>Auto Scaling &amp; Elastic Load Balancer</span>
+                                    </div>
+                                    <div class="co-topic-item">
+                                        <span class="co-topic-icon"><i class="fas fa-file-alt"></i></span>
+                                        <span>Practice Tests &amp; Exam Strategies</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Who Is This For -->
+                            <div class="co-eligibility-block">
+                                <h6 class="co-topics-title mb-3"><i class="fas fa-user-check me-2"></i>Who Is This
+                                    Course For?</h6>
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <div class="co-eligible-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Beginners with no cloud experience</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="co-eligible-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>IT professionals switching to cloud</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="co-eligible-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Developers wanting AWS certification</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="co-eligible-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>System admins &amp; network engineers</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What You Will Learn -->
+                        <div class="mb-5 what-you-learn-section">
+                            <h3 class="section-heading">What You Will Learn</h3>
+                            <p class="text-muted mb-4">By the end of this course, you'll have a comprehensive
+                                understanding of AWS cloud services and the confidence to ace your certification exam.
+                            </p>
+
+                            <div class="row g-3 mb-4">
                                 <div class="col-md-6">
-                                    <div class="feature-card h-100 p-4">
-                                        <div class="icon-box mb-3"><i class="fas fa-laptop-code"></i></div>
-                                        <h5>Hands-on Labs</h5>
-                                        <p class="small text-muted mb-0">Gain real-world experience through guided
-                                            practical exercises.</p>
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Design resilient, high-performing cloud architectures on AWS</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="feature-card h-100 p-4">
-                                        <div class="icon-box mb-3"><i class="fas fa-infinity"></i></div>
-                                        <h5>Lifetime Access</h5>
-                                        <p class="small text-muted mb-0">Learn at your own pace with unlimited access to
-                                            course materials.</p>
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Implement secure applications and architectures using IAM policies</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Configure VPCs, subnets, security groups &amp; network ACLs</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Deploy scalable applications using EC2, ECS, and Lambda</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Set up monitoring, logging &amp; alarms with CloudWatch</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Master S3 storage classes, lifecycle policies &amp; replication</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Implement cost-optimization strategies for AWS workloads</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="learn-item">
+                                        <div class="learn-icon"><i class="fas fa-check"></i></div>
+                                        <span>Build fault-tolerant systems with auto-scaling &amp; load balancers</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Key Course Highlights -->
+                            <div class="key-highlights-strip">
+                                <h5 class="fw-bold mb-3"><i class="fas fa-bolt me-2"
+                                        style="color: var(--accent-color);"></i>Key Course Highlights</h5>
+                                <div class="row g-3">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="highlight-card">
+                                            <div class="highlight-icon"><i class="fas fa-video"></i></div>
+                                            <div class="highlight-info">
+                                                <strong>50+ Video Lessons</strong>
+                                                <span>HD quality tutorials</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="highlight-card">
+                                            <div class="highlight-icon"><i class="fas fa-flask"></i></div>
+                                            <div class="highlight-info">
+                                                <strong>20+ Hands-on Labs</strong>
+                                                <span>Real-world projects</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="highlight-card">
+                                            <div class="highlight-icon"><i class="fas fa-file-alt"></i></div>
+                                            <div class="highlight-info">
+                                                <strong>3 Practice Exams</strong>
+                                                <span>Exam-ready prep</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="highlight-card">
+                                            <div class="highlight-icon"><i class="fas fa-certificate"></i></div>
+                                            <div class="highlight-info">
+                                                <strong>Official Voucher</strong>
+                                                <span>Included free</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -369,24 +727,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Instructor Section -->
-                        <div class="mb-5">
-                            <h3 class="section-heading">Meet Your Instructor</h3>
-                            <div class="instructor-card">
-                                <img src="https://i.pravatar.cc/150?u=instructor" alt="Instructor"
-                                    class="instructor-img">
-                                <div>
-                                    <h4 class="mb-1">David Smith</h4>
-                                    <p class="text-primary fw-semibold mb-2">Senior Cloud Architect</p>
-                                    <p class="text-muted small mb-0">David has over 15 years of experience in the IT
-                                        industry and has spent the last 8 years designing enterprise-scale solutions on
-                                        AWS. He holds all 12 AWS certifications and is passionate about helping others
-                                        succeed in their cloud journeys.</p>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Student Reviews Section -->
                         <div class="mb-5">
                             <h3 class="section-heading">Student Reviews</h3>
@@ -457,6 +797,107 @@
                             </div>
                         </div>
 
+
+
+                        <!-- Career Opportunities Section -->
+                        <div class="mb-5 career-opportunities-section">
+                            <h3 class="section-heading">Career Opportunities</h3>
+                            <p class="text-muted mb-4">An AWS Solutions Architect certification opens doors to some of
+                                the most in-demand and high-paying roles in the tech industry.</p>
+
+                            <div class="row g-3 mb-4">
+                                <!-- Role 1 -->
+                                <div class="col-md-6">
+                                    <div class="career-card">
+                                        <div class="career-card-header">
+                                            <div class="career-icon-wrap"><i class="fas fa-cloud"></i></div>
+                                            <div class="career-demand-badge"><i class="fas fa-fire me-1"></i>High Demand
+                                            </div>
+                                        </div>
+                                        <h5 class="career-role-title">Cloud Solutions Architect</h5>
+                                        <p class="career-role-desc">Design and oversee cloud infrastructure, ensuring
+                                            scalability, security and cost efficiency for enterprises.</p>
+                                        <div class="career-salary">
+                                            <i class="fas fa-indian-rupee-sign me-1"></i>
+                                            <span>₹8L – ₹25L / year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Role 2 -->
+                                <div class="col-md-6">
+                                    <div class="career-card">
+                                        <div class="career-card-header">
+                                            <div class="career-icon-wrap"><i class="fas fa-cogs"></i></div>
+                                            <div class="career-demand-badge"><i class="fas fa-fire me-1"></i>Trending
+                                            </div>
+                                        </div>
+                                        <h5 class="career-role-title">DevOps Engineer</h5>
+                                        <p class="career-role-desc">Automate CI/CD pipelines, manage
+                                            infrastructure-as-code, and streamline development workflows on AWS.</p>
+                                        <div class="career-salary">
+                                            <i class="fas fa-indian-rupee-sign me-1"></i>
+                                            <span>₹6L – ₹20L / year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Role 3 -->
+                                <div class="col-md-6">
+                                    <div class="career-card">
+                                        <div class="career-card-header">
+                                            <div class="career-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+                                            <div class="career-demand-badge badge-hot"><i
+                                                    class="fas fa-bolt me-1"></i>Top Paying</div>
+                                        </div>
+                                        <h5 class="career-role-title">Cloud Security Engineer</h5>
+                                        <p class="career-role-desc">Implement and manage security best practices,
+                                            compliance frameworks, and threat detection on AWS.</p>
+                                        <div class="career-salary">
+                                            <i class="fas fa-indian-rupee-sign me-1"></i>
+                                            <span>₹10L – ₹30L / year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Role 4 -->
+                                <div class="col-md-6">
+                                    <div class="career-card">
+                                        <div class="career-card-header">
+                                            <div class="career-icon-wrap"><i class="fas fa-database"></i></div>
+                                            <div class="career-demand-badge"><i
+                                                    class="fas fa-chart-line me-1"></i>Growing</div>
+                                        </div>
+                                        <h5 class="career-role-title">Cloud Data Engineer</h5>
+                                        <p class="career-role-desc">Build data pipelines and analytics solutions using
+                                            AWS services like Redshift, Glue, and Athena.</p>
+                                        <div class="career-salary">
+                                            <i class="fas fa-indian-rupee-sign me-1"></i>
+                                            <span>₹7L – ₹22L / year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Career Stats Banner -->
+                            <div class="career-stats-banner">
+                                <div class="row g-0 text-center">
+                                    <div class="col-6 col-md-3 career-stat-item">
+                                        <div class="career-stat-number">50,000+</div>
+                                        <div class="career-stat-label">Job Openings</div>
+                                    </div>
+                                    <div class="col-6 col-md-3 career-stat-item">
+                                        <div class="career-stat-number">₹12L</div>
+                                        <div class="career-stat-label">Avg. Salary</div>
+                                    </div>
+                                    <div class="col-6 col-md-3 career-stat-item">
+                                        <div class="career-stat-number">40%</div>
+                                        <div class="career-stat-label">Salary Hike</div>
+                                    </div>
+                                    <div class="col-6 col-md-3 career-stat-item">
+                                        <div class="career-stat-number">300+</div>
+                                        <div class="career-stat-label">Hiring Companies</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- FAQ Section -->
                         <div class="mb-5">
                             <h3 class="section-heading">Frequently Asked Questions</h3>
@@ -517,36 +958,43 @@
 
                             <!-- Course Info Card -->
                             <div class="sidebar-card" id="enroll">
-                                <div class="mb-4">
-                                    <span class="course-price">$149</span>
-                                    <span class="original-price">$299</span>
-                                    <div class="badge bg-danger mt-2 d-block w-50">50% OFF</div>
+                                <div class="price-card-right">
+                                    <div class="mb-4 ">
+                                        <div class="course-price">$149</div>
+                                        <div class="original-price">$299</div>
+                                        <div class="disc-badge badge bg-gray mt-2 d-block ">50% OFF</div>
+                                    </div>
                                 </div>
 
                                 <a href="contact.html" class="btn theme-primary w-100 btn-lg mb-3">Enroll Now</a>
-                                <p class="text-center small text-muted mb-4"><i class="fas fa-shield-alt me-1"></i>
-                                    30-Day Money-Back Guarantee</p>
+                                <!-- <p class="text-center small text-muted mb-4"><i class="fas fa-shield-alt me-1"></i>
+                                    30-Day Money-Back Guarantee</p> -->
 
-                                <h6 class="fw-bold mb-3 pb-2 border-bottom">Course Information:</h6>
+                                <h6 class="fw-bold my-3 pb-2 border-bottom">Course Information:</h6>
                                 <ul class="course-features-list mb-4">
                                     <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-clock"></i> Duration</div>
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-clock"></i>
+                                            Duration</div>
                                         <div class="small text-muted fw-semibold">40 Hours</div>
                                     </li>
                                     <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-barcode"></i> Exam Code</div>
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-barcode"></i>
+                                            Exam Code</div>
                                         <div class="small text-muted fw-semibold">ABC1234</div>
                                     </li>
                                     <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-sync-alt"></i> Retake Policy</div>
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-sync-alt"></i>
+                                            Retake Policy</div>
                                         <div class="small text-muted fw-semibold">2 Free Retakes</div>
                                     </li>
                                     <li class="justify-content-between pb-2 mb-3 border-bottom">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-globe"></i> Language</div>
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-globe"></i>
+                                            Language</div>
                                         <div class="small text-muted fw-semibold">English</div>
                                     </li>
                                     <li class="justify-content-between pb-2 mb-2">
-                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-infinity"></i> Access</div>
+                                        <div class="d-flex align-items-center text-dark"><i class="fas fa-infinity"></i>
+                                            Access</div>
                                         <div class="small text-muted fw-semibold">Lifetime</div>
                                     </li>
                                 </ul>
@@ -619,13 +1067,13 @@
 
 
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                    <h3 class="mb-4" style="font-family: 'Montserrat'; font-weight:800;">Pass4<span
-                            style="color:var(--accent-color);">Job</span></h3>
+                    <div class="mb-4">
+                        <img src="assets/images/logo-white.png" alt="Pass4Job Logo" style="height: 36px;">
+                    </div>
                     <p class="small opacity-75 pe-lg-4">Your trusted partner for official and discounted IT
                         certification vouchers. Start saving on your exams today.</p>
                     <div class="footer-socials mt-4">
@@ -640,26 +1088,31 @@
                     <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="vouchers.html">Vouchers</a></li>
+                        <li><a href="category.html">Vouchers</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="mb-4">Certifications</h5>
+                    <h5 class="mb-4">Training</h5>
                     <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
-                        <li><a href="vouchers.html">AWS Vouchers</a></li>
-                        <li><a href="vouchers.html">Microsoft Azure Vouchers</a></li>
-                        <li><a href="vouchers.html">Cisco Vouchers</a></li>
-                        <li><a href="vouchers.html">CompTIA Vouchers</a></li>
+                        <li><a href="category.html">AWS Training</a></li>
+                        <li><a href="category.html">Microsoft Training</a></li>
+                        <li><a href="category.html">Cisco Training</a></li>
+                        <li><a href="category.html">CompTIA Training</a></li>
+                        <li><a href="category.html">Isaca Training</a></li>
+                        <li><a href="category.html">PMI Training</a></li>
+                        <li><a href="category.html">CIA Training</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="mb-4">Contact Info</h5>
                     <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small opacity-75">
-                        <li><i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Tech Avenue, Silicon Valley</li>
-                        <li><i class="fas fa-envelope me-2 text-primary"></i> support@pass4job.com</li>
-                        <li><i class="fas fa-phone-alt me-2 text-primary"></i> +1 234 567 890</li>
+
+                        <li><i class="fas fa-envelope me-2 text-primary"></i> <a href="mailto:info@pass4job.com"
+                                class="text-decoration-none text-white">info@pass4job.com</a></li>
+                        <li><i class="fas fa-phone-alt me-2 text-primary"></i> <a href="tel:+917428563177"
+                                class="text-decoration-none text-white">+91 74285 63177</a></li>
                     </ul>
                 </div>
             </div>
@@ -675,6 +1128,7 @@
             </div>
         </div>
     </footer>
+
 
     <!--call floating button-->
     <a href="tel:+1234567890" class="call-float" target="_blank" rel="noopener noreferrer"
